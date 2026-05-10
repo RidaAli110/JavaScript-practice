@@ -38,3 +38,40 @@ while (energy >= 1) {
 }
 console.log('game over');
 
+//For in loops
+const movie = {
+     title: 'batman',
+     year: 2022,
+     rating: 9,
+}
+for (let key in movie) {
+     console.log(`${key}: ${movie[key]}`);
+     
+}
+const house = {
+     type: 'detached',
+     build: 'brick',
+     year: 2000,
+     price: 250000,
+     driveway: true
+}
+for (let key in house) {
+     console.log(`${key}: ${house[key]}`);
+}
+const game = {
+     title: 'Minecraft',
+     players: 8
+};
+console.log(game.title);
+const games = {
+     title: 'Minecraft',
+     players: 8
+};
+let key = 'title';
+console.log(game[key]);
+
+//For of loop
+let colors = ['red', 'orange', 'yellow', 'green', 'blue'];
+for (let x of colors) {
+     console.log(x);   
+}
