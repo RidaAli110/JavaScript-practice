@@ -56,5 +56,16 @@ function calculateDiscount(price, discount) {
 let finalPrice = calculateDiscount(100, 20);
 console.log(finalPrice);
 
+//js scope
+function showProfile() {
+     let username = 'MyName';
+     console.log(username);
+}
+showProfile();
+//console.log(username); this will cause a error because the username variable is created
+// inside the function, which means it cannot be accessed outside the function.
+
+
+
 
 
