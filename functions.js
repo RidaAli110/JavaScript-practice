@@ -65,6 +65,32 @@ showProfile();
 //console.log(username); this will cause a error because the username variable is created
 // inside the function, which means it cannot be accessed outside the function.
 
+//Arrow functions
+const multiply = (a, b) => a * b;
+console.log(multiply(4, 4));
+// Online Shop Arrow Functions Practice
+const applyDiscount= price => price - 10;
+console.log(applyDiscount(40));
+const createMessage = product => `Your order for ${product} has been placed`;
+console.log(createMessage('keyboard'));
+const freeDelivery = total => {
+     if (total >= 50) {
+          return 'free delivery';
+     } else {
+          return 'delivery costs £5';
+     }
+}
+console.log(freeDelivery(40));
+console.log(freeDelivery(51));
+const checkVip = points => {
+     if (points > 100) {
+          return 'Vip customer';
+     } else {
+          return 'regular customer';
+     }
+}
+console.log(checkVip(101));
+console.log(checkVip(99));
 
 
 
