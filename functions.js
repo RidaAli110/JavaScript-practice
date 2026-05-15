@@ -92,6 +92,44 @@ const checkVip = points => {
 console.log(checkVip(101));
 console.log(checkVip(99));
 
+//Functions calling other Functions
+function calculateDelivery(distance) {
+     if(distance > 5) {
+          return 7
+     }
+     else {
+          return 3
+     }
+}
+function calculateTotal(foodPrice, distance){
+     const delivery = calculateDelivery(distance);
+     const finalTotal = delivery + foodPrice;
+     return finalTotal;
+}
+function printReceipt(customerName, foodPrice, distance) {
+     const finalTotal = calculateTotal(foodPrice, distance)
+     return `${customerName}'s order  total is £${finalTotal}`
+}
+console.log(printReceipt('Jennie', 17, 10));
+function formatName(name) {
+     return name.toUpperCase()
+}
+function greetUser(name){
+     const message = formatName(name);
+     console.log(`welcome ${message}`);
+     
+}
+greetUser('Alex');
+function calculateTip(amount){
+     return amount * 0.10;
+}
+function printBill(customer, amount) {
+     const finalAmount = calculateTip(amount) + amount;
+     const message =  finalAmount;
+     console.log(`${customer} needs to pay £${message}`);
+     
+}
+printBill('Alexa', 200);
 
 
 
