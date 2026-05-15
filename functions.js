@@ -130,6 +130,44 @@ function printBill(customer, amount) {
      
 }
 printBill('Alexa', 200);
-
-
-
+//movie ticket system,(practice after not understanding.)
+function getTicketPrice(age) {
+     if (age < 18) {
+          return 8;
+     } else {
+          return 15;
+     }
+}
+function printTicket(name, age) {
+     const final = getTicketPrice(age);
+     console.log(`${name} needs to pay £${final}`);
+     
+}
+printTicket('Riley', 19)
+//online coffee shop
+function coffeeSizePrice(size){
+     if (size === 'large') {
+          return 10
+     } else if(size === 'medium') {
+          return 8;
+     }
+     else {
+          return 6;
+     }
+}
+function addSyrup(wantSyrup) {
+     if (wantSyrup === true) {
+          return 2;
+     } else {
+          return 0;
+     }
+}
+function prinReceipt(name, size, wantSyrup) {
+     const cofeeSize = coffeeSizePrice(size);
+     const syrup = addSyrup(wantSyrup);
+     const finalPrice = cofeeSize + syrup;
+     console.log(`${name}'s coffee costs £${finalPrice}`);
+     
+}
+prinReceipt('Sam', 'large', false); 
+//understand functions calling other functions  now, made no mistakes
