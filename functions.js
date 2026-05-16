@@ -1,3 +1,4 @@
+"use strict";
 //invoking a function
 function  myName(){
      console.log('rida'); 
@@ -204,4 +205,84 @@ function calculateSquareRoot(num) {
 }
 console.log(calculateSquareRoot(25));
 console.log(calculateSquareRoot(100));
+//more function practice
+function movieTicketPrice(age) {
+     if (age < 13) {
+          return 'child ticket';
+     } else {
+          return 'adult ticket';
+     }
+}
+console.log(movieTicketPrice(11));
+console.log(movieTicketPrice(19));
+
+function gamingXP(xp){
+     return xp + 50;
+}
+console.log(gamingXP(100));
+
+function coffeeMachine(type) {
+     if (type === 'latte'){
+     return `making ${type}`
+     }
+     else if (type === 'cappuccino'){
+     return `making ${type}`
+     }
+      else {
+     return `unknown drink`
+     }
+}
+console.log(coffeeMachine('tea'));
+console.log(coffeeMachine('latte'));
+
+function passwordChecker(password) {
+     if (password.length >= 8) {
+          return 'strong password';
+     }
+     else {
+          return 'weak password';
+     }
+}
+console.log(passwordChecker('fdytu'));
+console.log(passwordChecker('fdfrgdvytu'));
+
+function attackBoss(damage){
+     return 10;
+}
+function bossFight(){
+     let damageAmount = attackBoss();
+     console.log(damageAmount);
+}
+bossFight();
+
+function pizzaPrice(size){
+     if (size === 'small') {
+          return 5;
+     }
+     else if(size === 'medium'){
+          return 10
+     }
+      else if(size === 'large'){
+          return 15
+     }
+     else {
+          return 'invalid size'
+     }
+}
+console.log(pizzaPrice('medium'));
+
+function gymPrice(age, wantsTrainer){
+     let price;
+     if (age < 18) {
+         price = 15;
+     }
+     else  {
+         price = 25
+     }
+    if (wantsTrainer === true) {
+     return price = price + 10;
+    }
+    return price;
+}
+console.log(gymPrice(19, false));
 
