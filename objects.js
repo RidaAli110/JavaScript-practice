@@ -27,6 +27,59 @@ console.log(store.keyPrice); //undefined
 store ['discount Code'] = 'DISCODE';
 console.log(store['discount Code']);
 
+//object methods
+//object.keys method
+const laptop = {
+     brand: 'lenovo',
+     ram: '16GB',
+     price: 900
+};
+const keys = Object.keys(laptop);
+console.log(keys);
+console.log(keys[1]);
+
+//object values
+const movie = {
+  title: 'Interstellar',
+  year: 2014,
+  rating: 9
+};
+const values = Object.values(movie);
+console.log(values);
+console.log(values[1]);
+
+//object entries
+const phone = {
+  brand: 'Apple',
+  battery: 80,
+  charging: true
+};
+const entries = Object.entries(phone);
+console.log(entries);
+console.log(entries[1][0]);
+console.log(entries[1][1]);
+
+//this keyword
+const pet = {
+  name: 'Milo',
+  age: 3,
+
+  introduce() {
+    console.log(`${this.name} is ${this.age} years old`);
+  }
+};
+pet.introduce();
+
+
+
+
+
+
+
+
+
+
+
 
 
 
