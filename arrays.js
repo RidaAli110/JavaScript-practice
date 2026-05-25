@@ -91,8 +91,11 @@ console.log(newAdminCheck);
 const createString = newAdminCheck.join(", ")
 console.log(createString);
 
-
-
+// destructuring arrays practice
+const fruits = ['apple', banana];
+const [first, second] = fruits;
+console.log(first);
+console.log(second);
 
 
 
