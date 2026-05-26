@@ -92,11 +92,14 @@ const createString = newAdminCheck.join(", ")
 console.log(createString);
 
 // destructuring arrays practice
-const fruits = ['apple', banana];
+const fruits = ['apple', 'banana'];
 const [first, second] = fruits;
 console.log(first);
 console.log(second);
-
+const animals = ['cat', 'dog', 'rabbit'];
+const [first2, , third] = animals;
+console.log(first2);
+console.log(third);
 
 
 
