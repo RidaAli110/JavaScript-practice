@@ -286,3 +286,9 @@ function gymPrice(age, wantsTrainer){
 }
 console.log(gymPrice(19, false));
 
+// practice excersise 30.05.26
+const calcCodingHours = function(days, hoursPerDay){
+    return days * hoursPerDay;
+}
+calcCodingHours(7, 2);
+calcCodingHours(30, 3);
