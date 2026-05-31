@@ -20,3 +20,17 @@ const student = {
 const {name: studentName, score: marks} = student;
 console.log(studentName);
 console.log(marks);
+
+// the spread operator
+const skills = ['HTML', 'CSS'];
+const updatedSkills = [...skills, 'JavaScript'];
+const students = {
+     name: 'rida',
+     course: 'JavaScript'
+}
+const updatedStudent = {
+     ...students,
+     course: 'React'
+};
+console.log(updatedSkills);
+console.log(updatedStudent);
