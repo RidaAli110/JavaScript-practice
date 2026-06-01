@@ -34,3 +34,25 @@ const updatedStudent = {
 };
 console.log(updatedSkills);
 console.log(updatedStudent);
+
+// Rest parameter
+const studentProfile = function(name, course, ...skills){
+     console.log(name);
+     console.log(course);
+     console.log(skills);
+     console.log(`First skill: ${skills[0]}`);
+     console.log(skills.length);
+}
+studentProfile('alex', 'javascript', 'HTML', 'CSS', 'react', 'tailwind')
+const sumNumbers = function(...numbers){
+     console.log(numbers);
+     console.log(numbers[0]);
+     console.log(numbers.length);
+};
+sumNumbers(10, 20, 30, 40, 50);
+const shoppingList = function(owner, ...items) {
+     console.log(`owner: ${owner}`);
+     console.log(`items:`, items);
+     console.log(`Total items: ${items.length}`);
+}
+shoppingList('Alex', 'Milk', 'Bread', 'Eggs');
