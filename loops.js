@@ -103,3 +103,13 @@ for(let i = 0; i < nums.length; i++){
           console.log(`${nums[i]} is odd`);
      }
 }
+
+// for of loop practice 02.06.26
+const languages = ['HTML', 'CSS', 'JavaScript', 'React'];
+for (let x of languages) {
+     console.log(`I am learning ${x}`);
+}
+const studyHours = [2, 3, 1, 4, 2];
+for (let x of studyHours) {
+     console.log(`total study hours: ${x}`);
+}
