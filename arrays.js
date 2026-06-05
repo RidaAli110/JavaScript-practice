@@ -31,6 +31,9 @@ const orders = ['laptop', 'mouse', 'keyboard']
 orders.push('monitor');
 console.log(orders);
 console.log(`There are now ${orders.length} orders in the system`); 
+const colors = ['Red', 'Blue'];
+colors.push('Green');
+console.log(colors);
 //Unshift method adds to start of array
 const tasks = ['Fix navbar', 'Update footer', 'Deploy website'];
 tasks.unshift('Fix Payment Bug')
