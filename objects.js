@@ -70,7 +70,13 @@ const pet = {
 };
 pet.introduce();
 
-
+// practice 07.06.26
+const book = {
+  title: 'JavaScript basics',
+  author: 'John Doe',
+  tags: ['javascript', 'programming']
+};
+console.log(book.tags[1]);
 
 
 
