@@ -78,7 +78,17 @@ const book = {
 };
 console.log(book.tags[1]);
 
-
+// practice 11.06.36
+const book = {
+  title: 'JavaScript Basics',
+  author: 'John',
+  pages: 250,
+};
+console.log(book);
+console.log(book.title);
+book.pages = 300;
+book.isPublished = true;
+console.log(book); 
 
 
 
