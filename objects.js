@@ -90,6 +90,16 @@ book.pages = 300;
 book.isPublished = true;
 console.log(book); 
 
+const person = {
+  name: 'Alex',
+  age: 25,
+  city: 'London',
+};
+console.log(person.name);
+person.age = 26;
+person.job = 'Developer';
+delete person.city;
+console.log(person);
 
 
 
