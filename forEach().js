@@ -21,4 +21,9 @@ numbers.forEach((item) => console.log(`${item} doubled is ${item * 2}`));
 const todos = ['Study JavaScript', 'Build a project', 'Push to GitHub'];
 todos.forEach(function(item){
      console.log(`[ ] ${item}`);
-})
+});
+
+const fruits = ['Apple', 'Banana', 'Orange', 'Mango'];
+fruits.forEach((fruit, index) => {
+  console.log(`${index + 1}. ${fruit}`);
+});
