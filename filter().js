@@ -57,3 +57,7 @@ const movies = [
 ];
 const topMovies = movies.filter((movie) => movie.watched && movie.rating >= 8);
 console.log(topMovies);
+
+const ages = [12, 18, 21, 15, 30, 16, 25];
+const adults = ages.filter((age) => age >= 18);
+console.log(adults);
