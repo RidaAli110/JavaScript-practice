@@ -39,5 +39,3 @@ I update this repository regularly as I learn and practice new things.
 This is a learning repository — code may be simple, experimental, or unfinished as I improve.
 
 ---
-
-*Consistency over perfection.*
