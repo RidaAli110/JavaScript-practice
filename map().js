@@ -50,3 +50,8 @@ const orders = [
 const paidOrders = orders.filter((order) => order.paid)
 .map((order) => `Order #${order.id} - ${order.customer} (£${order.total})`);
 console.log(paidOrders);
+
+const animals = ['Cat', 'Dog', 'Rabbit', 'Bird'];
+animals.forEach((animal, index) => {
+  console.log(`Animal ${index + 1}: ${animal}`);
+});
