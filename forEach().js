@@ -27,3 +27,8 @@ const fruits = ['Apple', 'Banana', 'Orange', 'Mango'];
 fruits.forEach((fruit, index) => {
   console.log(`${index + 1}. ${fruit}`);
 });
+
+const animals = ['Cat', 'Dog', 'Rabbit', 'Bird'];
+animals.forEach((animal, index) => {
+  console.log(`Animal ${index + 1}: ${animal}`);
+});
