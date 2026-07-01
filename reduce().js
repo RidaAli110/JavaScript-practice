@@ -13,3 +13,9 @@ const users = [
 ];
 const totalAge = users.reduce((acc, cur) => acc + cur.age, 0);
 console.log(totalAge);
+
+const numbers = [5, 10, 15, 20];
+const total = numbers.reduce((acc, curr) => {
+  return acc + curr;
+}, 0);
+console.log(total);
