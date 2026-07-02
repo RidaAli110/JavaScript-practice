@@ -50,3 +50,21 @@ const orders = [
 const paidOrders = orders.filter((order) => order.paid)
 .map((order) => `Order #${order.id} - ${order.customer} (£${order.total})`);
 console.log(paidOrders);
+
+const numbers = [2, 4, 6, 8];
+const doubled = numbers.map((number) => number * 2);
+console.log(doubled);
+
+const names = ['Ali', 'Sara', 'John'];
+const greetings = names.map((name) => `Hello ${name}`);
+console.log(greetings);
+
+const products2 = [
+  { id: 1, name: 'Laptop', price: 800 },
+  { id: 2, name: 'Phone', price: 500 },
+  { id: 3, name: 'Tablet', price: 300 }
+];
+const productList = products2.map(
+  (product) => `${product.name} - £${product.price}`
+);
+console.log(productList);
