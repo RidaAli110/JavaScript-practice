@@ -61,3 +61,7 @@ console.log(topMovies);
 const ages = [12, 18, 21, 15, 30, 16, 25];
 const adults = ages.filter((age) => age >= 18);
 console.log(adults);
+
+const numbers = [3, 8, 12, 15, 20, 25, 30];
+const evenNumbers = numbers.filter((number) => number % 2 === 0);
+console.log(evenNumbers);
