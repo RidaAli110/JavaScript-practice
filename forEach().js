@@ -32,3 +32,8 @@ const animals = ['Cat', 'Dog', 'Rabbit', 'Bird'];
 animals.forEach((animal, index) => {
   console.log(`Animal ${index + 1}: ${animal}`);
 });
+
+const prices2 = [12.99, 8.5, 19.99, 5.25, 14];
+prices2.forEach((price, index) => {
+  console.log(`Item ${index + 1} costs £${price.toFixed(2)}`);
+});
