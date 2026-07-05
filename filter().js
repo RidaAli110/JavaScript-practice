@@ -65,3 +65,13 @@ console.log(adults);
 const numbers = [3, 8, 12, 15, 20, 25, 30];
 const evenNumbers = numbers.filter((number) => number % 2 === 0);
 console.log(evenNumbers);
+
+const students = [
+  { name: 'Ahmed', score: 92 },
+  { name: 'Fatima', score: 67 },
+  { name: 'James', score: 85 },
+  { name: 'Sofia', score: 74 },
+  { name: 'Liam', score: 88 }
+];
+const passedStudents = students.filter((student) => student.score >= 80);
+console.log(passedStudents);
