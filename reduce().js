@@ -15,7 +15,15 @@ const totalAge = users.reduce((acc, cur) => acc + cur.age, 0);
 console.log(totalAge);
 
 const numbers = [5, 10, 15, 20];
-const total = numbers.reduce((acc, curr) => {
+const total2 = numbers.reduce((acc, curr) => {
   return acc + curr;
 }, 0);
-console.log(total);
+console.log(total2);
+
+const orders = [25, 40, 15, 60, 30];
+const total3 = orders.reduce((acc, curr) => {
+  return acc + curr;
+}, 0);
+console.log(total3);
+
+
