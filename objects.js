@@ -69,15 +69,6 @@ const pet = {
   }
 };
 pet.introduce();
-
-// practice 07.06.26
-const book = {
-  title: 'JavaScript basics',
-  author: 'John Doe',
-  tags: ['javascript', 'programming']
-};
-console.log(book.tags[1]);
-
 // practice 11.06.36
 const book = {
   title: 'JavaScript Basics',
@@ -101,6 +92,16 @@ person.job = 'Developer';
 delete person.city;
 console.log(person);
 
+const student = {
+  name: 'Rida',
+  age: 21,
+  course: 'JavaScript',
+  completedLessons: 35
+};
+console.log(student.name);
+console.log(`${student.name} has completed ${student.completedLessons} lessons.`);
+student.isLearning = true;
+student.completedLessons = 36;
 
 
 
