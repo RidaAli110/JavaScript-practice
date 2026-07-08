@@ -15,3 +15,9 @@ const message =
     ? "You can enter with a parent."
     : "Entry denied.";
 console.log(message);
+
+const cartItems = 3;
+const message2 = cartItems > 0
+  ? "Proceed to Checkout"
+  : "Your cart is empty";
+console.log(message2);
