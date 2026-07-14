@@ -26,4 +26,10 @@ const total3 = orders.reduce((acc, curr) => {
 }, 0);
 console.log(total3);
 
+const words = ['JavaScript', 'is', 'really', 'fun'];
+const sentence = words.reduce((acc, word) => {
+  return acc + ' ' + word;
+});
+console.log(sentence);
+
 
