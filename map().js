@@ -68,3 +68,7 @@ const productList = products2.map(
   (product) => `${product.name} - £${product.price}`
 );
 console.log(productList);
+
+const prices2 = [10, 25, 40, 15, 8];
+const pricesWithVAT = prices2.map(price => price * 1.2);
+console.log(pricesWithVAT);
