@@ -21,3 +21,14 @@ const message2 = cartItems > 0
   ? "Proceed to Checkout"
   : "Your cart is empty";
 console.log(message2);
+
+const score = 72;
+const grade =
+  score >= 90
+    ? "A"
+    : score >= 80
+    ? "B"
+    : score >= 70
+    ? "C"
+    : "Fail";
+    console.log(grade);
